@@ -1,4 +1,4 @@
-import { Phone, MapPin, Mail, Instagram } from "lucide-react"
+import { Phone, MapPin, Mail, Instagram } from 'lucide-react'
 import Link from "next/link"
 
 export default function Contact() {
@@ -15,15 +15,20 @@ export default function Contact() {
           <div className="flex flex-col items-center text-center">
             <MapPin className="text-rose-500 mb-4 h-8 w-8" />
             <h3 className="text-xl font-semibold text-rose-700 mb-2">Endereços</h3>
-            <p className="text-rose-600">
+            <p className="text-rose-600 mb-2">
               Passagem Brasíliano Índio de Moraes-Santiago, 460 - Passo d'Areia
               <br />
               Porto Alegre - RS, 91030-000
             </p>
-            <p className="text-rose-600 mt-2">
+            <p className="text-rose-600 mb-2">
               R. Dona Sebastiana, 459 - São João
               <br />
               Porto Alegre - RS, 91020-010
+            </p>
+            <p className="text-rose-600">
+              Av. José Bonifácio, 519 sala 304 - Farroupilha
+              <br />
+              Porto Alegre - RS, 90040-130
             </p>
           </div>
           <div className="flex flex-col items-center text-center">
@@ -48,9 +53,19 @@ export default function Contact() {
         </div>
         <div className="mt-12 text-center text-rose-600">
           <p>&copy; {new Date().getFullYear()} Jussara Ferreira - Todos os direitos reservados</p>
+          <p className="mt-2 text-sm">
+            Desenvolvido por{' '}
+            <Link 
+              href="https://www.clickasso.com.br" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-rose-700 hover:text-rose-800 transition-colors"
+            >
+              clickasso
+            </Link>
+          </p>
         </div>
       </div>
     </section>
   )
 }
-
